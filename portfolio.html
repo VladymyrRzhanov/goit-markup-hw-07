@@ -17,30 +17,29 @@
 
     <!-- Шапка сайта -->
     <header class="header">
-        <div class="container navigation">
+        <div class="container header__container">
             <nav class="main-menu">
-                <a href="./index.html" lang="en" class="logo"><span class="web">Web</span>Studio</a>
-    
-                <ul class="menu-list">
-                    <li class="menu-items"><a href="./index.html" class="nav-list">Студия</a></li>
-                    <li class="menu-items"><a href="./portfolio.html" class="nav-list current">Портфолио</a></li>
-                    <li class="menu-items"><a href="" class="nav-list">Контакты</a></li>
+                <a class="logo main-menu__logo" href="./index.html" lang="en"><span class="logo__text">Web</span>Studio</a>
+        
+                <ul class="site-nav">
+                    <li class="site-nav__item"><a class="site-nav__link" href="./index.html">Студия</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link site-nav__link--current" href="./portfolio.html">Портфолио</a></li>
+                    <li class="site-nav__item"><a class="site-nav__link" href="">Контакты</a></li>
                 </ul>
             </nav>
-    
+        
             <ul class="contacts-list">
-                <li class="contacts-items">
-                    <a href="mailto:info@devstudio.com" lang="en" class="contacts">
-                        <svg class="icon-mail">
+                <li class="contacts-list__item">
+                    <a href="mailto:info@devstudio.com" lang="en" class="contacts-list__link">
+                        <svg class="contacts-list__icon" width="16" height="12">
                             <use href="./images/icons.svg#icon-mail"></use>
                         </svg>
                         info@devstudio.com
                     </a>
                 </li>
-                <!-- Надо указывать атрибут lang для адреса почты? -->
-                <li class="contacts-items">
-                    <a href="tel:+380961111111" class="contacts">
-                        <svg class="icon-smartphone">
+                <li class="contacts-list__item">
+                    <a href="tel:+380961111111" class="contacts-list__link">
+                        <svg class="contacts-list__icon" width="10" height="16">
                             <use href="./images/icons.svg#icon-smartphone"></use>
                         </svg>+38 096 111 11 11
                     </a>

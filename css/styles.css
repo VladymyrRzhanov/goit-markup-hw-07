@@ -44,6 +44,11 @@ li {
   list-style: none;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .section__title {
   margin-bottom: 50px;
   font-weight: 700;
@@ -54,12 +59,42 @@ li {
   color: var(--heading-color);
 }
 
+.section__title--visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: 1px;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .subtitle {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list__item {
+  margin-right: 30px;
+}
+
+.list__item:last-child {
+  margin-right: 0;
 }
 
 .button {
@@ -78,35 +113,6 @@ li {
   border-color: transparent;
 }
 
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.list__item {
-  margin-right: 30px;
-}
-
-.list__item:last-child {
-  margin-right: 0;
-}
-
-.section__title--visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: 1px;
-}
 
 /* Шапка сайта */
 
@@ -124,6 +130,8 @@ li {
   display: flex;
   align-items: center;
 }
+
+      /* Логотип */
 
 .logo {
   font-family: "Raleway", sans-serif;
@@ -146,6 +154,8 @@ li {
   display: flex;
   align-items: center;
 }
+
+      /* Главная навигация страницы */
 
 .site-nav {
   display: flex;
@@ -196,6 +206,8 @@ li {
   border-radius: 2px;
 }
 
+      /* Контакты в навигации шапки */
+
 .contacts__list {
   margin-left: auto;
 }
@@ -223,7 +235,7 @@ li {
   color: var(--accent-color);
 }
 
-/* Страница Студия */
+                                  /* СТРАНИЦА СТУДИИ */
 
 /* Hero */
 
@@ -265,12 +277,9 @@ li {
 
 /* Преимущества компании */
 
-.features {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
-.benefits__background {
+      /* Плюсы компании */
+.benefits {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -299,13 +308,13 @@ li {
   color: var(--text-color);
 }
 
-/* Возможности компании */
+/* Чем мы занимаемся */
 
-.capabilities {
-  padding-bottom: 94px;
+.section--narrow {
+  padding-top: 0;
 }
 
-.capabilities__link {
+.capabilities {
   display: block;
 }
 
@@ -334,13 +343,13 @@ li {
   color: var(--white-color);
 }
 
-/* Сотрудники */
+/* Наша команда */
 
-.team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.section--light-background {
   background-color: var(--light-background-color);
 }
+
+      /* Карточка члена команды */
 
 .employee {
   background-color: #ffffff;
@@ -371,6 +380,8 @@ li {
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
+
+      /* Социальные сети члена команды */
 
 .social-list {
   display: flex;
@@ -417,10 +428,8 @@ li {
 
 /* Постоянные клиенты */
 
-.clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+
+      /* Логотип-ссылка клиента */
 
 .client-link {
   display: flex;
@@ -442,12 +451,10 @@ li {
   fill: var(--accent-color);
 }
 
-/* Страница Портфолио */
+                                  /* СТРАНИЦА ПОРТФОЛИО */
 
-.projects {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+      /* Список кнопок-категорий проектов */
+
 .category-list {
   margin-bottom: 50px;
 }
@@ -486,6 +493,8 @@ li {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+      /* Оформление списка карточек проектов */
+
 .design-list {
   flex-wrap: wrap;
   flex-basis: calc(100% / 3-30px);
@@ -502,6 +511,8 @@ li {
 .design-list__item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
+
+      /* Карточка проекта */
 
 .project__link {
   display: inline-block;
@@ -582,9 +593,7 @@ li {
   align-items: baseline;
 }
 
-.address-container {
-  margin-right: 70px;
-}
+      /* Оформление логотипа в футере  */
 
 .footer__logo {
   display: block;
@@ -592,6 +601,12 @@ li {
   margin-right: 0;
   color: var(--white-color);
 }
+      /* Адрес компании */
+
+.address-container {
+  margin-right: 70px;
+}
+
 
 .address-list__item {
   font-style: normal;
@@ -617,6 +632,9 @@ li {
 .address-list__footer:hover, .address-list__footer:focus {
   color: var(--accent-color);
 }
+
+      /* Социальные сети компании */
+
 .footer-social {
   margin-right: 93px;
   margin-left: auto;
@@ -629,14 +647,6 @@ li {
   color: var(--white-color);
 }
 
-.social-list > li {
-  margin-right: 10px;
-}
-
-.social-list > li:last-child {
-  margin-right: 0;
-}
-
 .social-link--dark {
   fill: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
@@ -646,6 +656,8 @@ li {
 .social-link:focus {
   background-color: var(--accent-color);
 }
+
+      /* Форма подписки */
 
 .email__container {
   display: flex;
@@ -688,6 +700,8 @@ li {
 .email__icon {
   margin-left: 10px;
 }
+
+      /* Окно заказа услуг */
 
 /* Модальное окно */
 
@@ -764,6 +778,8 @@ li {
 
   color: var(--heading-color);
 }
+
+      /* Форма  заказа*/
 
 .order-form {
   display: flex;

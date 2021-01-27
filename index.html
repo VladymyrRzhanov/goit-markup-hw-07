@@ -18,9 +18,9 @@
     <!-- Шапка сайта -->
 
     <header class="header">
-        <div class="container header__container">
-            <nav class="main-menu">
-                <a class="logo main-menu__logo" href="./index.html" lang="en"><span class="logo__text">Web</span>Studio</a>
+        <div class="container header__main-menu">
+            <nav class="header__menu">
+                <a class="logo header__logo" href="./index.html" lang="en"><span class="logo__text">Web</span>Studio</a>
         
                 <ul class="site-nav">
                     <li class="site-nav__item"><a class="site-nav__link site-nav__link--current" href="./index.html">Студия</a></li>
@@ -66,7 +66,7 @@
 
         <section class="features">
             <div class="container">
-                <h2 class="section__title--visually-hidden">Особенности</h2>
+                <h2 class="section__title section__title--visually-hidden">Особенности</h2>
                 <ul class="list">
                     <li class="list__item">
                         <div class="benefits__background">
@@ -370,7 +370,7 @@
     <footer class="footer">
         <div class="container footer__container">
             <div class="address-container">
-                <a class="logo footer-contacts__logo" href="./index.html" lang="en"><span class="logo__text">Web</span>Studio</a>
+                <a class="logo footer__logo" href="./index.html" lang="en"><span class="logo__text">Web</span>Studio</a>
                 <ul class="address-list">
                     <li class="address-list__item">г. Киев, пр-т Леси Украинки, 26</li>
                     <li class="address-list__item">
@@ -438,35 +438,36 @@
                 </svg>
             </button>
             <h2 class="modal__title">Оставьте свои данные, мы вам перезвоним</h2>
-            <form class="modal-form" autocomplete="off">
-                <label class="form-title" for="name">Имя</label>
-                <div class="form-conteiner">
-                    <input class="form-field" type="text" name="username" id="name">
-                    <svg class="form-icon" width="18" height="18">
+            <form class="order-form" autocomplete="off">
+                <label class="order-form__title" for="name">Имя</label>
+                <div class="order-form__conteiner">
+                    <input class="order-form__field" type="text" name="username" id="name">
+                    <svg class="order-form__icon" width="18" height="18">
                         <use href="./images/icons.svg#icon-person"></use>
                     </svg>
                 </div>
-                <label class="form-title" for="phone">Телефон</label>
-                <div class="form-conteiner">
-                    <input class="form-field" type="tel" name="phone" id="phone">
-                    <svg class="form-icon" width="18" height="18">
+                <label class="order-form__title" for="phone">Телефон</label>
+                <div class="order-form__conteiner">
+                    <input class="order-form__field" type="tel" name="phone" id="phone">
+                    <svg class="order-form__icon" width="18" height="18">
                         <use href="./images/icons.svg#icon-phone"></use>
                     </svg>
                 </div>
-                <label class="form-title" for="mail">Почта</label>
-                <div class="form-conteiner">
-                    <input class="form-field" type="email" name="mail" id="mail">
-                    <svg class="form-icon" width="18" height="18">
+                <label class="order-form__title" for="mail">Почта</label>
+                <div class="order-form__conteiner">
+                    <input class="order-form__field" type="email" name="mail" id="mail">
+                    <svg class="order-form__icon" width="18" height="18">
                         <use href="./images/icons.svg#icon-email"></use>
                     </svg>
                 </div>
-                <label class="form-title" for="comments">Комментарий</label>
-                <textarea class="form-field form-comments" name="comments" id="comments" placeholder="Введите текст"></textarea>
+                <label class="order-form__title" for="comments">Комментарий</label>
+                <textarea class="order-form__field form-comments__order-form" name="comments" id="comments" placeholder="Введите текст"></textarea>
                 <label class="consent-field">
-                    <input class="check" type="checkbox" name="consent"><span class="icon"></span>
-                    Соглашаюсь с рассылкой и принимаю&nbsp;<a class="consent-link" href=""> Условия договора</a>
+                    <input class="consent-field__check" type="checkbox" name="consent">
+                    <span class="consent-field__icon"></span>
+                    Соглашаюсь с рассылкой и принимаю&nbsp;<a class="consent-field__link" href=""> Условия договора</a>
                 </label>
-                <button class="form-button button" type="submit">Отправить</button>
+                <button class="order-form__button button" type="submit">Отправить</button>
             </form>
         </div>
     </div>

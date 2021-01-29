@@ -1,7 +1,5 @@
 .design-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex;
     flex-wrap: wrap;
 }
   
@@ -22,7 +20,7 @@
     &__thumb {
         position: relative;
         overflow: hidden;
-        display: flex;
+        @extend %flex;
     }
 
     &__meta {
@@ -78,8 +76,7 @@
     color: $white-color;
     background-color: rgba(33, 150, 243, 0.9);
     transform: translateY(100%);
-    transition: transform $transition-duration
-      $transition-timing-function;
+    @include transition(transform);
 
     .project__link:hover &,
     .project:focus & {

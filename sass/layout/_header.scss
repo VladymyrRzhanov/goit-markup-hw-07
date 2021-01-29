@@ -14,22 +14,18 @@ body {
     border-bottom: 1px solid #ececec;
 
   &__main-menu {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    @extend %flex;
   }
       
   &__menu {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    @extend %flex;
   }
 
 }
   
  /* Контакты в навигации шапки */
 
- .contacts-link {
+.contacts-link {
   display: inline-flex;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -39,7 +35,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: $text-color;
-  transition: color $transition-duration $transition-timing-function;
+  @include transition(color);
 
   &__icon {
       margin-right: 10px;

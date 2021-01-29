@@ -1,15 +1,12 @@
 .client-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  @extend %flex;
     width: 170px;
     height: 90px;
     border: 1px solid $social-link-color;
     border-radius: 4px;
     fill: $social-link-color;
   
-    transition: fill $transition-duration $transition-timing-function,
-      border-color $transition-duration $transition-timing-function;
+    @include transition(fill, border-color);
 
     &:hover,
     &:focus {

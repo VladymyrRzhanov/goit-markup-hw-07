@@ -10,8 +10,7 @@
   
   .capabilities__image {
     position: relative;
-    display: flex;
-    justify-content: center;
+    @extend %flex;
     align-items: flex-end;
 
     &::before {

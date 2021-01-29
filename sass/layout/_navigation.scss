@@ -1,7 +1,5 @@
 .site-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  @extend %flex;
 
     &__item {
       margin-right: 50px;
@@ -22,7 +20,7 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: $heading-color;
-    transition: color $transition-duration $transition-timing-function;
+    @include transition(color);
 
     &:hover,
     &:focus {

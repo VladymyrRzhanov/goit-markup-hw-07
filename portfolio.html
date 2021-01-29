@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
@@ -19,7 +18,7 @@
     <header class="header">
         <div class="container header__main-menu">
             <nav class="header__menu">
-                <a class="logo header__logo" href="./index.html" lang="en"><span class="logo__text">Web</span>Studio</a>
+                <a class="logo logo--top" href="./index.html" lang="en"><span class="logo__text">Web</span>Studio</a>
         
                 <ul class="site-nav">
                     <li class="site-nav__item"><a class="site-nav__link" href="./index.html">Студия</a></li>
@@ -28,7 +27,7 @@
                 </ul>
             </nav>
         
-            <ul class="list contacts__list">
+            <ul class="list list--right">
                 <li class="list__item">
                     <a href="mailto:info@devstudio.com" lang="en" class="contacts-link">
                         <svg class="contacts-link__icon" width="16" height="12">
@@ -55,14 +54,14 @@
             <div class="container">
                 <h1 class="section__title section__title--visually-hidden">Работы студии</h1>
                 <ul class="list category-list">
-                    <li class="category-list__item"><button type="button" class="category__button">Все</button></li>
-                    <li class="category-list__item"><button type="button" class="category__button">Веб-сайты</button></li>
-                    <li class="category-list__item"><button type="button" class="category__button">Приложения</button></li>
-                    <li class="category-list__item"><button type="button" class="category__button">Дизайн</button></li>
-                    <li class="category-list__item"><button type="button" class="category__button">Маркетинг</button></li>
+                    <li class="category-list__item"><button type="button" class="category-list__button">Все</button></li>
+                    <li class="category-list__item"><button type="button" class="category-list__button">Веб-сайты</button></li>
+                    <li class="category-list__item"><button type="button" class="category-list__button">Приложения</button></li>
+                    <li class="category-list__item"><button type="button" class="category-list__button">Дизайн</button></li>
+                    <li class="category-list__item"><button type="button" class="category-list__button">Маркетинг</button></li>
                 </ul>
-                <ul class="list design-list">
-                    <li class="list__item design-list__item">
+                <ul class="design-list">
+                    <li class="design-list__item">
                         <article class="project">
                             <a href="" class="project__link">
                                 <div class="project__thumb">
@@ -80,7 +79,7 @@
                             </a>
                         </article>
                     </li>
-                    <li class="list__item design-list__item">
+                    <li class="design-list__item">
                         <article class="project">
                             <a href="" class="project__link">
                                 <div class="project__thumb">
@@ -98,7 +97,7 @@
                             </a>
                         </article>
                     </li>
-                    <li class="list__item design-list__item">
+                    <li class="design-list__item">
                         <article class="project">
                             <a href="" class="project__link">
                                 <div class="project__thumb">
@@ -116,7 +115,7 @@
                             </a>
                         </article>
                     </li>
-                    <li class="list__item design-list__item">
+                    <li class="design-list__item">
                         <article class="project">
                             <a href="" class="project__link">
                                 <div class="project__thumb">
@@ -133,7 +132,7 @@
                             </a>
                         </article>
                     </li>
-                    <li class="list__item design-list__item">
+                    <li class="design-list__item">
                         <article class="project">
                             <a href="" class="project__link">
                                 <div class="project__thumb">
@@ -151,7 +150,7 @@
                             </a>
                         </article>
                     </li>
-                    <li class="list__item design-list__item">
+                    <li class="design-list__item">
                         <article class="project">
                             <a href="" class="project__link">
                                 <div class="project__thumb">
@@ -168,7 +167,7 @@
                             </a>
                         </article>
                     </li>
-                    <li class="list__item design-list__item">
+                    <li class="design-list__item">
                         <article class="project">
                             <a href="" class="project__link">
                                 <div class="project__thumb">
@@ -186,7 +185,7 @@
                             </a>
                         </article>
                     </li>
-                    <li class="list__item design-list__item">
+                    <li class="design-list__item">
                         <article class="project">
                             <a href="" class="project__link">
                                 <div class="project__thumb">
@@ -203,7 +202,7 @@
                             </a>
                         </article>
                     </li>
-                    <li class="list__item design-list__item">
+                    <li class="design-list__item">
                         <article class="project">
                             <a href="" class="project__link">
                                 <div class="project__thumb">
@@ -231,42 +230,42 @@
     <footer class="footer">
         <div class="container footer__container">
             <div class="address-container">
-                <a class="logo footer__logo" href="./index.html" lang="en"><span class="logo__text">Web</span>Studio</a>
+                <a class="logo logo--bottom" href="./index.html" lang="en"><span class="logo__text">Web</span>Studio</a>
                 <ul class="address-list">
-                    <li class="address-list__item">г. Киев, пр-т Леси Украинки, 26</li>
+                    <li class="address-list__item"><p class="address-list__text">г. Киев, пр-т Леси Украинки, 26</p></li>
                     <li class="address-list__item">
-                        <a href="mailto:info@devstudio.com" lang="en" class="address-list__footer">info@devstudio.com</a>
+                        <a href="mailto:info@devstudio.com" lang="en" class="address-list__text address-list__text--grey">info@devstudio.com</a>
                     </li>
                     <li class="address-list__item">
-                        <a href="tel:+380961111111" class="address-list__footer">+38 096 111 11 11</a>
+                        <a href="tel:+380961111111" class="address-list__text address-list__text--grey">+38 096 111 11 11</a>
                     </li>
                 </ul>
             </div>
             <div class="footer-social">
                 <b class="footer-social__subtitle subtitle">Присоединяйтесь</b>
-                <ul class="social-list">
-                    <li class="social-list__item">
+                <ul class="list">
+                    <li class="list__item list__item--narrow">
                         <a href="" class="social-link social-link--dark" aria-label="Инстаграм">
                             <svg class="social-link__icon">
                                 <use href="./images/icons.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="social-list__item">
+                    <li class="list__item list__item--narrow">
                         <a href="" class="social-link social-link--dark" aria-label="Твиттер">
                             <svg class="social-link__icon">
                                 <use href="./images/icons.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="social-list__item">
+                    <li class="list__item list__item--narrow">
                         <a href="" class="social-link social-link--dark" aria-label="Фейсбук">
                             <svg class="social-link__icon">
                                 <use href="./images/icons.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="social-list__item">
+                    <li class="list__item list__item--narrow">
                         <a href="" class="social-link social-link--dark" aria-label="Линкедин">
                             <svg class="social-link__icon">
                                 <use href="./images/icons.svg#icon-linkedin"></use>

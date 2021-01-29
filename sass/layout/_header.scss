@@ -1,0 +1,53 @@
+body {
+    padding-top: 80px;
+    background-color: $white-color;
+    font-family: "Roboto", sans-serif;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #ececec;
+
+  &__main-menu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+      
+  &__menu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+}
+  
+ /* Контакты в навигации шапки */
+
+ .contacts-link {
+  display: inline-flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $text-color;
+  transition: color $transition-duration $transition-timing-function;
+
+  &__icon {
+      margin-right: 10px;
+      fill: currentColor;
+    }
+    
+  &:hover,
+  &:focus {
+      color: $accent-color;
+  }
+} 

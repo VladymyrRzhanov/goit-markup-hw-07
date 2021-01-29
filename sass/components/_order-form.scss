@@ -1,0 +1,130 @@
+.order-form {
+    display: flex;
+    flex-direction: column;
+
+    &__conteiner {
+        position: relative;
+        margin-bottom: 10px;
+      }
+
+    &__title {
+        margin-bottom: 4px;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+        color: $text-color;
+      }
+
+    &__button {
+        padding: 10px 55px;
+        margin: 0 auto;
+    }
+  }
+
+  .order-form__field {
+    width: 100%;
+    padding: 11px 12px 11px 42px;
+    border: 1px solid;
+    border-color: rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition: border-color $transition-duration
+      $transition-timing-function;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+        border-color: $accent-color;
+      }
+  }
+  
+  
+  
+  .form-comments__order-form {
+    height: 120px;
+    margin-bottom: 20px;
+    padding: 12px 16px;
+    resize: none;
+
+    &::placeholder {
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+    }
+  }
+  
+  
+  .consent-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $text-color;
+
+    &__check {
+        margin-right: 7px;
+        position: absolute;
+        clip: rect(0 0 0 0);
+        width: 1px;
+        height: 1px;
+        margin: 1px;
+      }
+
+    &__link {
+        text-decoration: underline;
+        color: $accent-color;
+    }
+  }
+  
+  .order-form__icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    fill: #212121;
+    transition: fill $transition-duration $transition-timing-function;
+
+    .order-form__field:focus + & {
+        fill: $accent-color;
+    }
+  }
+  
+ .consent-field__icon {
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+    border: 2px solid;
+    border-color: $heading-color;
+    border-radius: 2px;
+    background-color: transparent;
+    background-image: url(../images/check.svg);
+    background-size: contain;
+    background-origin: border-box;
+    transition: background-color $transition-duration
+        $transition-timing-function,
+      border-color $transition-duration $transition-timing-function,
+      background-image $transition-duration
+        $transition-timing-function;
+
+    .consent-field__check:checked + & {
+            background-color: $accent-color;
+            background-image: url(../images/check.svg);
+            background-size: contain;
+            background-origin: border-box;
+            border-color: $accent-color;
+    }
+          
+  }
+
+  
+ 
+  
+  
+  
+  

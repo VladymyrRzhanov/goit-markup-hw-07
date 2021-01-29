@@ -5,23 +5,21 @@
   border-radius: 50%;
   fill: $social-link-color;
   background-color: transparent;
-  @include transition(fill,background-color);
+  @include transition(fill, background-color);
 
-        
-    &__icon {
-        width: 20px;
-        height: 20px;
-      }
-      
-    &:hover,
-    &:focus {
-        fill: $white-color;
-        background-color: $accent-color;
-      }
-    
-    &--dark {
-      fill: #ffffff;
-      background-color: rgba(255, 255, 255, 0.1);
-    }    
-      
+  &__icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  &:hover,
+  &:focus {
+    fill: $white-color;
+    background-color: $accent-color;
+  }
+
+  &--dark {
+    fill: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
 }

@@ -7,14 +7,12 @@
     @extend %flex;
     align-items: baseline;
   }
-  
 }
 
 .address-container {
-    margin-right: 70px;
+  margin-right: 70px;
 }
-  
-  
+
 .address-list__item {
   margin-bottom: 9px;
 
@@ -22,18 +20,15 @@
     margin-bottom: 0;
   }
 }
-  
-.address-list__text {
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: $white-color;
 
-    &--grey {
-        color: rgba(255, 255, 255, 0.6);
-        @include transition(color);
-    }
+.address-list__text {
+  @include fontAll-w(14px, 1.71, 0.03em);
+  color: $white-color;
+
+  &--grey {
+    color: rgba(255, 255, 255, 0.6);
+    @include transition(color);
+  }
 }
 
 .footer-social {
@@ -41,18 +36,18 @@
   margin-left: auto;
 
   &__subtitle {
-      display: block;
-      margin-bottom: 20px;
-      text-align: left;
-      color: $white-color;
-    }
+    display: block;
+    margin-bottom: 20px;
+    text-align: left;
+    color: $white-color;
+  }
 }
 
 .email {
   &__container {
     @extend %flex;
-    }
-    
+  }
+
   &__subtitle {
     display: inline-block;
     margin-bottom: 20px;
@@ -63,12 +58,11 @@
     @extend %flex;
     padding: 10px 28px 10px 29px;
   }
-    
+
   &__icon {
     margin-left: 10px;
   }
 }
-
 
 .email__field {
   width: 358px;
@@ -81,10 +75,8 @@
   border-radius: 4px;
 
   &::placeholder {
-      font-size: 16px;
-      line-height: 1.25;
-      align-items: center;
-      letter-spacing: 0.03em;
-      color: rgba(255, 255, 255, 0.6);
-    }
+    @include fontAll-w(16px, 1.25, 0.03em);
+    align-items: center;
+    color: rgba(255, 255, 255, 0.6);
+  }
 }

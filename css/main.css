@@ -358,6 +358,14 @@ li {
           justify-content: center;
 }
 
+.section__title--visually-hidden, .consent-field__check {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: 1px;
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -376,17 +384,9 @@ li {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: #212121;
-}
-
-.section__title--visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: 1px;
 }
 
 .container {
@@ -432,11 +432,11 @@ li {
 .button {
   height: 50px;
   font-family: inherit;
-  font-size: 16px;
-  cursor: pointer;
   font-weight: 700;
+  font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  cursor: pointer;
   color: #ffffff;
   background-color: #2196f3;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -490,7 +490,7 @@ body {
 }
 
 .logo {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -579,7 +579,6 @@ body {
 }
 
 .address-list__text {
-  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -633,37 +632,37 @@ body {
 .email__field::-webkit-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
+  letter-spacing: 0.03em;
   -webkit-box-align: center;
           align-items: center;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .email__field:-ms-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
+  letter-spacing: 0.03em;
   -ms-flex-align: center;
       align-items: center;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .email__field::-ms-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
+  letter-spacing: 0.03em;
   -ms-flex-align: center;
       align-items: center;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .email__field::placeholder {
   font-size: 16px;
   line-height: 1.25;
+  letter-spacing: 0.03em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -767,8 +766,8 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: #212121;
 }
 
@@ -776,8 +775,8 @@ body {
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.18;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: #757575;
 }
 
@@ -866,8 +865,8 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: #212121;
 }
 
@@ -988,15 +987,6 @@ body {
   color: #757575;
 }
 
-.consent-field__check {
-  margin-right: 7px;
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: 1px;
-}
-
 .consent-field__link {
   text-decoration: underline;
   color: #2196f3;
@@ -1060,8 +1050,8 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: #212121;
   cursor: pointer;
   background-color: #f5f4fa;

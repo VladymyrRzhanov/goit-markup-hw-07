@@ -1,23 +1,19 @@
 .logo {
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: #000000;
+  font-family: "Raleway";
+  @include fontAll(700, 26px, 1.19, 0.03em);
+  color: #000000;
 
-    &__text {
-        color: $accent-color;
-    }
+  &__text {
+    color: $accent-color;
+  }
 
-    &--top {
-        margin-right: 93px;
-    }
+  &--top {
+    margin-right: 93px;
+  }
 
-    &--bottom {
-        display: block;
-        margin-bottom: 20px;
-        color: $white-color;
-    }
-
+  &--bottom {
+    display: block;
+    margin-bottom: 20px;
+    color: $white-color;
+  }
 }

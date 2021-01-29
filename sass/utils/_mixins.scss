@@ -1,6 +1,19 @@
-@mixin transition($properties...) { 
-    transition: $transition-duration $transition-timing-function;
-    @if length($properties) > 1 {
-      transition-property: $properties;
-    }
+@mixin fontAll($weight, $size, $height, $spacing) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  letter-spacing: $spacing;
+}
+
+@mixin fontAll-w($size, $height, $spacing) {
+  font-size: $size;
+  line-height: $height;
+  letter-spacing: $spacing;
+}
+
+@mixin transition($properties...) {
+  transition: $transition-duration $transition-timing-function;
+  @if length($properties) > 1 {
+    transition-property: $properties;
+  }
 }

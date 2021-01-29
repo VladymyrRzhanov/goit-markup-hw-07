@@ -958,35 +958,35 @@ body {
   border-color: #2196f3;
 }
 
-.form-comments__order-form {
+.order-form__field--bigger {
   height: 120px;
   margin-bottom: 20px;
   padding: 12px 16px;
   resize: none;
 }
 
-.form-comments__order-form::-webkit-input-placeholder {
+.order-form__field--bigger::-webkit-input-placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form-comments__order-form:-ms-input-placeholder {
+.order-form__field--bigger:-ms-input-placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form-comments__order-form::-ms-input-placeholder {
+.order-form__field--bigger::-ms-input-placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form-comments__order-form::placeholder {
+.order-form__field--bigger::placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
